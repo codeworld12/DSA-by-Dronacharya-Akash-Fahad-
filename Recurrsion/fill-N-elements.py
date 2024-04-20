@@ -26,6 +26,18 @@ def fun(n):
 ans = fun(n)
 print(ans)
 
+# 3rd Approach without zero
+n = int(input())
+li = [0] * n 
+def fun(n):
+    if n == 1:
+        li[n-1] = n
+        return li
+    li[n-1] = n
+    return fun(n-1)
+
+print(fun(n))
+
 
 
 
