@@ -1,0 +1,26 @@
+import java.util.*;
+
+class Node {
+    int data;
+    Node next;
+    
+    Node(int data1, Node next1) {
+        this.data = data1;
+        this.next = next1;
+    }
+    
+    Node(int data1) {
+        this.data = data1;
+        this.next = null;
+    }
+}
+
+public class LinkedList
+{
+	public static void main(String[] args) {
+	    int[] nums = {2, 3, 4, 5};
+		System.out.println(Arrays.toString(nums));
+		Node y = new Node(nums[0]);
+		System.out.println(y.data);
+	}
+}
